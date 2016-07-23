@@ -20,6 +20,7 @@ setup(
     license = "BSD",
     keywords = "keyword density seo",
     url = "https://github.com/gosom/pykeyword_density",
+    download_url = 'https://github.com/gosom/pykeyword_density/archive/0.1.tar.gz',
     packages=['kwdensity', 'kwdensity.filters',],
     long_description=read('README.md'),
     classifiers=[
