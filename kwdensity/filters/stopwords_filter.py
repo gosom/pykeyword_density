@@ -8,7 +8,9 @@ class StopwordsFilter(BaseFilter):
     def __init__(self, country):
         super(StopwordsFilter, self).__init__()
         self.country = country
-        self.fname = 'stopwords/%s.txt' % self.country
+        stopword_fname = '%s.txt' % self.country
+        folder_name = os.path.dirname(__file__)
+        self.fname = os.path.join(folder_name, 'stopwords', stopword_fname)
         with open(self.fname, 'rb') as f:
             self.stopwords = {l.strip().decode('utf8') for l in f if l}
 
