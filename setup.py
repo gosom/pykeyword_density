@@ -19,7 +19,7 @@ setup(
     description = ("Computes the keyword density of a string"),
     license = "BSD",
     keywords = "keyword density seo",
-    url = "",
+    url = "https://github.com/gosom/pykeyword_density",
     packages=['kwdensity', 'kwdensity.filters',],
     long_description=read('README.md'),
     classifiers=[
